@@ -1,0 +1,97 @@
+<%- contentFor('HeaderCss') %>
+
+<%- contentFor('breadcrumb') %>
+<!-- start page title -->
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+            <h4 class="mb-sm-0 font-size-18">Takip Sistemi</h4>
+
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Analiz</a></li>
+                    <li class="breadcrumb-item active">Canlı Takip</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- end page title -->
+
+<%- contentFor('body') %>
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card" >
+            <div class="card-body">
+                <h4 class="card-title mb-4">Canlı Takip</h4>
+
+                        <div class="row">
+                                  <div class="col-md-3">
+                                         <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Tag ismi..">
+                                            <datalist id="datalistOptions">
+                                               <option value="Tag1">
+                                              <option value="Tag2">
+                                              <option value="Tag3">
+                       
+                                              </datalist>
+                                    </div>
+                    
+          
+                     <div class="col-md-3">
+                        <input class="form-control" type="date" value="2019-08-21"
+                            id="example-date-input">
+                    </div>
+                     <div class="col-md-3">
+                        <input class="form-control" type="date" value="2019-08-21"
+                            id="example-date-input">
+                    </div>
+     
+                      <div class="col-md-3">
+                    <button type="button" class="btn btn-light waves-effect" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg">Görüntüle</button>
+
+                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="myLargeModalLabel">Görüntüle</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                          
+ <div id="scatter-chart" class="e-charts" style="position: relative;
+ width: 500px;
+  height: 500px;
+  background: url('public/assets/images/deneme.png') 0 0 no-repeat;
+  background-size: cover;
+  overflow: hidden;" ></div>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+                </div>
+
+<div class="col-12">  &nbsp;</div>
+              <!--  <div id="scatter-chart" class="e-charts" style="position: relative;
+ width: 1080px;
+  height: 1080px;
+  background: url('public/assets/images/deneme.png') 0 0 no-repeat;
+  background-size: cover;
+  overflow: hidden;" ></div>-->
+            </div>
+        </div>
+    </div>
+    
+</div>
+<!-- end row -->
+
+<%- contentFor('FooterJs') %>
+
+<!-- echarts js -->
+<script src="public/assets/libs/echarts/echarts.min.js"></script>
+<!-- echarts init -->
+<script src="public/assets/js/pages/echarts.init.js"></script>
+
+<%- contentFor('BottomJs') %>

@@ -1,0 +1,493 @@
+<%- contentFor('HeaderCss') %>
+
+    <%- contentFor('breadcrumb') %>
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                    <h4 class="mb-sm-0 font-size-18">Cihazlar</h4>
+
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">Cihazlar</a></li>
+                            <li class="breadcrumb-item active">Cihazlar</li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <%- contentFor('body') %>
+            <div class="row">
+              
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mini-stats-wid">
+                                <div class="card-body">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p class="text-muted fw-medium">ANCHOR SAYISI</p>
+                                            <h4 class="mb-0">4</h4>
+                                        </div>  
+
+                                        <div
+                                            class="mini-stat-icon avatar-sm rounded-circle bg-primary align-self-center">
+                                            <span class="avatar-title">
+                                                <i class="bx bx-copy-alt font-size-24"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mini-stats-wid">
+                                <div class="card-body">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p class="text-muted fw-medium">TAG SAYISI</p>
+                                            <h4 class="mb-0">1</h4>
+                                        </div>
+
+                                        <div
+                                            class="avatar-sm rounded-circle bg-primary align-self-center mini-stat-icon">
+                                            <span class="avatar-title rounded-circle bg-primary">
+                                                <i class="bx bx-archive-in font-size-24"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     
+                     
+                        </div>
+                        
+                    </div></div>
+                    <!-- end row -->
+
+            <!-- end row -->
+
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                        
+                            <h4 class="card-title mb-4"> <!-- center modal -->
+                        <div class="col-md-4">
+                    <button type="button" class="btn btn-primary waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".bs-example-modal-center">Yeni Cihaz Ara</button>
+                    
+                    <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Cihaz Ara/Ekle</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                   
+                   <div class="card">
+            <div class="card-body">
+
+            <h4 class="card-title mb-4">Bulunan Cihazlar</h4>
+
+
+                <div class="table-responsive">
+                    <table class="table table-editable table-nowrap align-middle table-edits">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Seri Numarası</th>
+                                <th>Cihaz Adı</th>       
+                                <th>Düzenle/Ekle</th>                          
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-id="1">
+                                <td data-field="id" style="width: 80px">1</td>
+                                <td data-field="name">David McHenry</td>
+                                <td data-field="age">24</td>
+                                <td style="width: 100px">
+                                    <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                                                <button type="button" class="btn btn-sm btn-primary waves-effect waves-light">Cihazı Ekle</button>
+
+                                </td>
+                            </tr>
+                            <tr data-id="2">
+                                <td data-field="id">2</td>
+                                <td data-field="name">Frank Kirk</td>
+                                <td data-field="age">22</td>
+                                <td>
+                                    <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                                                <button type="button" class="btn btn-sm btn-primary waves-effect waves-light">Cihazı Ekle</button>
+
+                                </td>
+                            </tr>
+                            <tr data-id="3">
+                                <td data-field="id">3</td>
+                                <td data-field="name">Rafael Morales</td>
+                                <td data-field="age">26</td>
+                                <td>
+                                    <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                                                <button type="button" class="btn btn-sm btn-primary waves-effect waves-light">Cihazı Ekle</button>
+
+                                </td>
+                            </tr>
+                            <tr data-id="4">
+                                <td data-field="id">4</td>
+                                <td data-field="name">Mark Ellison</td>
+                                <td data-field="age">32</td>
+                                <td>
+                                    <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                                                <button type="button" class="btn btn-sm btn-primary waves-effect waves-light">Cihazı Ekle</button>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                </div>
+
+                </div>
+            </div>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal --> &nbsp;  Kayıtlı Cihazlar
+                            
+                            </h4>
+                            
+                            <div class="table-responsive">
+                                <table class="table align-middle table-nowrap mb-0">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th style="width: 20px;">
+                                               
+                                            </th>
+                                            <th class="align-middle">Seri Numarası</th>
+                                            <th class="align-middle">Cihaz Adı</th>
+                                            <th class="align-middle">Eklendiği Tarih</th>
+                                              <th class="align-middle">Konum</th>
+                                            <th class="align-middle">Cihaz Görevi</th>
+                                            <th class="align-middle">Detayları Görüntüle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                      
+                                            </td>
+                                            <td><a href="javascript: void(0);" class="text-body fw-bold">DW2540</a>
+                                            </td>
+                                            <td>Neal Matthews</td>
+                                            <td>
+                                                07 Oct, 2019
+                                            </td>
+                                               <td>
+                                                1. Bölge
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="badge badge-pill badge-soft-success font-size-11">Anchor</span>
+                                            </td>
+                                            <td>
+                                                <!-- Button trigger modal -->
+                                                <button type="button"
+                                                    class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
+                                                    data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                    Detayları Görüntüle
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                           
+                                            </td>
+                                            <td><a href="javascript: void(0);" class="text-body fw-bold">DW2541</a>
+                                            </td>
+                                            <td>Jamal Burnett</td>
+                                            <td>
+                                                07 Oct, 2019
+                                            </td>
+                                                <td>
+                                                3. Bölge
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="badge badge-pill badge-soft-danger font-size-11">Tanımsız</span>
+                                            </td>
+                                            <td>
+                                                <!-- Button trigger modal -->
+                                                <button type="button"
+                                                    class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
+                                                    data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                    Detayları Görüntüle
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                              
+                                            </td>
+                                            <td><a href="javascript: void(0);" class="text-body fw-bold">DW2542</a>
+                                            </td>
+                                            <td>Juan Mitchell</td>
+                                            <td>
+                                                06 Oct, 2019
+                                            </td>
+                                                <td>
+                                                1. Bölge
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="badge badge-pill badge-soft-success font-size-11">Anchor</span>
+                                            </td>
+                                            <td>
+                                                <!-- Button trigger modal -->
+                                                <button type="button"
+                                                    class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
+                                                    data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                    Detayları Görüntüle
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                               
+                                            </td>
+                                            <td><a href="javascript: void(0);" class="text-body fw-bold">DW2543</a>
+                                            </td>
+                                            <td>Barry Dick</td>
+                                            <td>
+                                                05 Oct, 2019
+                                            </td>
+                                                <td>
+                                                4. Bölge
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="badge badge-pill badge-soft-success font-size-11">Anchor</span>
+                                            </td>
+                                            <td>
+                                                <!-- Button trigger modal -->
+                                                <button type="button"
+                                                    class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
+                                                    data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                    Detayları Görüntüle
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                            </td>
+                                            <td><a href="javascript: void(0);" class="text-body fw-bold">DW2544</a>
+                                            </td>
+                                            <td>Ronald Taylor</td>
+                                            <td>
+                                                04 Oct, 2019
+                                            </td>
+                                                <td>
+                                                5. Bölge
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="badge badge-pill badge-soft-warning font-size-11">Tag</span>
+                                            </td>
+                                            <td>
+                                                <!-- Button trigger modal -->
+                                                <button type="button"
+                                                    class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
+                                                    data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                    Detayları Görüntüle
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                               
+                                            </td>
+                                            <td><a href="javascript: void(0);" class="text-body fw-bold">DW2545</a>
+                                            </td>
+                                            <td>Jacob Hunter</td>
+                                            <td>
+                                                04 Oct, 2019
+                                            </td>
+                                                <td>
+                                                2. Bölge
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="badge badge-pill badge-soft-success font-size-11">Anchor</span>
+                                            </td>
+                                            <td>
+                                                <!-- Button trigger modal -->
+                                                <button type="button"
+                                                    class="btn btn-primary btn-sm btn-rounded waves-effect waves-light"
+                                                    data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                    Detayları Görüntüle
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- end table-responsive -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+            <!-- Transaction Modal -->
+            <div class="modal fade transaction-detailModal" tabindex="-1" role="dialog"
+                aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="transaction-detailModalLabel">Order Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="mb-2">Product id: <span class="text-primary">DW2540</span></p>
+                            <p class="mb-4">Billing Name: <span class="text-primary">Neal Matthews</span></p>
+
+                            <div class="table-responsive">
+                                <table class="table align-middle table-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Product</th>
+                                            <th scope="col">Product Name</th>
+                                            <th scope="col">Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <div>
+                                                    <img src="public/assets/images/product/img-7.png" alt="" class="avatar-sm">
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div>
+                                                    <h5 class="text-truncate font-size-14">Wireless Headphone (Black)
+                                                    </h5>
+                                                    <p class="text-muted mb-0">$ 225 x 1</p>
+                                                </div>
+                                            </td>
+                                            <td>$ 255</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <div>
+                                                    <img src="public/assets/images/product/img-4.png" alt="" class="avatar-sm">
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div>
+                                                    <h5 class="text-truncate font-size-14">Phone patterned cases</h5>
+                                                    <p class="text-muted mb-0">$ 145 x 1</p>
+                                                </div>
+                                            </td>
+                                            <td>$ 145</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h6 class="m-0 text-right">Sub Total:</h6>
+                                            </td>
+                                            <td>
+                                                $ 400
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h6 class="m-0 text-right">Shipping:</h6>
+                                            </td>
+                                            <td>
+                                                Free
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h6 class="m-0 text-right">Total:</h6>
+                                            </td>
+                                            <td>
+                                                $ 400
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modal -->
+
+            <!-- subscribeModal 
+            <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header border-bottom-0">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="text-center mb-4">
+                                <div class="avatar-md mx-auto mb-4">
+                                    <div class="avatar-title bg-light rounded-circle text-primary h1">
+                                        <i class="mdi mdi-email-open"></i>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-10">
+                                        <h4 class="text-primary">Subscribe !</h4>
+                                        <p class="text-muted font-size-14 mb-4">Subscribe our newletter and get
+                                            notification to stay update.</p>
+
+                                        <div class="input-group bg-light rounded">
+                                            <input type="email" class="form-control bg-transparent border-0"
+                                                placeholder="Enter Email address" aria-label="Recipient's username"
+                                                aria-describedby="button-addon2">
+
+                                            <button class="btn btn-primary" type="button" id="button-addon2">
+                                                <i class="bx bxs-paper-plane"></i>
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <!-- end modal -->
+
+            <%- contentFor('FooterJs') %>
+                <!-- apexcharts -->
+                <script src="public/assets/libs/apexcharts/apexcharts.min.js"></script>
+
+                <!-- dashboard init -->
+                <script src="public/assets/js/pages/dashboard.init.js"></script>
+
+                <script src="public/assets/libs/table-edits/build/table-edits.min.js"></script>
+
+<script src="public/assets/js/pages/table-editable.int.js"></script>  
+
+                <%- contentFor('BottomJs') %>
